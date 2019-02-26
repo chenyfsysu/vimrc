@@ -120,8 +120,11 @@ endif
 " When you press gv you Ack after the selected text
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
-" Open Ack and put the cursor in the right position
 map <leader>f :CtrlSF 
+let g:ctrlsf_auto_focus = {"at": "start"}
+let g:ctrlsf_ackprg = 'rg'
+
+" Open Ack and put the cursor in the right position
 nmap <C-G> :Ack 
 " When you press <leader>r you can search and replace the selected text
 vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
