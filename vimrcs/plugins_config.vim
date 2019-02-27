@@ -51,7 +51,16 @@ map <c-b> :CtrlPBuffer<cr>
 
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+let g:ctrlp_dont_split = 'nerdtree'
 
+
+""""""""""""""""""""""""""""""
+" => CTRLSF
+""""""""""""""""""""""""""""""
+map <leader>f :CtrlSF 
+let g:ctrlsf_auto_focus = {"at": "start"}
+let g:ctrlsf_ackprg = 'rg'
+let g:ctrlsf_mapping = {"next": "n", "prev": "N"}
 
 """"""""""""""""""""""""""""""
 " => ZenCoding
