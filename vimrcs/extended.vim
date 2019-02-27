@@ -120,9 +120,11 @@ endif
 " When you press gv you Ack after the selected text
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
+" CtrlSF
 map <leader>f :CtrlSF 
 let g:ctrlsf_auto_focus = {"at": "start"}
 let g:ctrlsf_ackprg = 'rg'
+let g:ctrlsf_mapping = {"next": "n", "prev": "N"}
 
 " Open Ack and put the cursor in the right position
 nmap <C-G> :Ack 
