@@ -4,6 +4,14 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" 平台判定
+let g:is_windows = 0
+if(has("win32") || has("win64") || has("win95") || has("win16"))
+    let g:is_windows = 1
+else
+    let g:is_windows = 0
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
@@ -30,6 +38,9 @@ set guioptions-=L
 " Colorscheme
 set background=dark
 colorscheme molokai
+if(g:is_windows)
+    set guifont=Courier_New:h12:cANSI
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
