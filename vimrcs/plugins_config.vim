@@ -58,6 +58,7 @@ let g:ctrlp_dont_split = 'nerdtree'
 " => CTRLSF
 """"""""""""""""""""""""""""""
 map <leader>f :CtrlSF 
+map <leader>s :CtrlSFOpen<cr>
 let g:ctrlsf_auto_focus = {"at": "start"}
 let g:ctrlsf_ackprg = 'rg'
 let g:ctrlsf_mapping = {"next": "n", "prev": "N"}
