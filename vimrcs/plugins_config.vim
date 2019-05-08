@@ -192,4 +192,4 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => taglist
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader> tt: TlistToggle<cr>
+" map <leader> tt: TlistToggle<cr>
