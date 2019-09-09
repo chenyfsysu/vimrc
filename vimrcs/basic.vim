@@ -27,6 +27,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+let __file__ = expand("%:t")
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -184,7 +186,15 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
-set expandtab
+set listchars=tab:>-,trail:-
+" set list
+
+" c++ no expand tab
+if __file__ =~ ".*\.cpp" || __file__ =~ ".*\.cc"
+    set noexpandtab
+else
+    set expandtab
+endif
 
 " Be smart when using tabs ;)
 set smarttab
